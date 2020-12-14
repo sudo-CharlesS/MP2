@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <title>MP2 : Présentation logiciel de cryptage</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism-coy.min.css"
+        integrity="sha512-CKzEMG9cS0+lcH4wtn/UnxnmxkaTFrviChikDEk1MAWICCSN59sDWIF0Q5oDgdG9lxVrvbENSV1FtjLiBnMx7Q=="
+        crossorigin="anonymous" />
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body data-spy="scroll" data-bs-target="#navbar">
+    <script src="prism.js"></script>
+
+
+    <div class="parallax-bg-wrapper rellax" data-rellax-speed="-4" data-rellax-percentage=".6">
+        <div class="bg-image" style="background-image: url(img/python-code.jpg);"></div>
+    </div>
+
+    <div class="container">
+        <div class="rellax" data-rellax-speed="10">
+            <header>
+            </header>
+        </div>
+
+
+
+
+        <nav id="navbar" class="navbar sticky-top navbar-expand-lg navbar-light bg-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#Home">Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav ml-auto nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#but">But du projet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projet">Le projet</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-expanded="false">La réalisation</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#difficultes">Les difficultés</a></li>
+                                <li><a class="dropdown-item" href="#perspectives">Les perspectives</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#travail">Répartition du travail</a></li>
+                                <li><a class="dropdown-item" href="#communication">Méthode de communication</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <h1 class="rellax" data-rellax-speed="5" data-rellax-percentage="1.1">Le Projet</h1>
+
+        <div class="video rellax white" data-rellax-speed="40" data-rellax-percentage=".6">
+            <div class="embed-responsive embed-responsive-16by9">
+                <video controls poster="img/poster.png">
+                    <source src="video/MP2.mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="cantainer white vide" data-bs-offset="0" tabindex="10">
+            <div class="row" id="but">
+                <h4>But du projet </h4>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <p data-scroll>L’objectif était de réaliser un logiciel permettant de crypter ou de décrypter un
+                        texte
+                        par
+                        substitution
+                        mono-alphabétique, avec le langage de programmation <a
+                            href="https://www.python.org/">Python</a>.
+                    </p>
+
+                    <p data-scroll>
+                        En cryptographie, le chiffrement par décalage, qui est connu aussi comme le cryptage de César,
+                        est
+                        une
+                        méthode de cryptage très simple, utilisée par Jules César dans ses correspondances secrètes.
+                    </p>
+
+                    <p data-scroll>Le principe du cryptage par substitution mono-alphabétique est de décaler le rang des
+                        lettres dans
+                        l’alphabet, selon une clé donnée, ce qui rend le texte indéchiffrable en l’état. Par exemple
+                        avec
+                        une
+                        clé de 3, la lettre A devient la lettre D, et ainsi de suite. Il y a 25 clés possibles. En
+                        effet, il
+                        y a
+                        26 lettres dans l’alphabet, mais une clé de 26 reviendrait à une clé de 0, car on ferait le tour
+                        complet
+                        de l’alphabet. De mème, si on utilise une clé supérieur à 26, cela reviendrait à une clé entre 1
+                        et
+                        25.
+                        Et enfin, si on utilise une clé négative, on parcourt l’alphabet dans le sens inverse.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <p data-scroll>Pour tous les caractères autres que des lettres majuscules, comme les espaces, les
+                        chiffres ou la
+                        ponctuation, ils restent inchangés dans le texte crypté.
+                    </p>
+
+                    <p data-scroll>Le programme que nous avons réalisé comporte un programme principal accompagné de
+                        trois fonctions :
+                        une
+                        fonction de cryptage avec une clé donnée, une fonction décryptage avec une clé donnée également,
+                        et
+                        enfin une fonction de décryptage sans clé, qui utilise également la deuxième fonction.
+                    </p>
+
+                    <p data-scroll>Ce logiciel s’utilise en ligne de commande, mais il pourrait également être exploité
+                        par un autre
+                        programme Python.
+                    </p>
+                    <p data-scroll>Pour réaliser notre programme nous avons utilisé l'IDE Spyder.</p>
+                    <a href="https://www.spyder-ide.org/">
+                        <img src="img/spyder.png" width="200px" alt="Spyder logo">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div data-scroll class="col-lg-12 col-md-12 col-xs-24">
+                    <p>Le but de ce projet était d’exploiter les connaissances apprises précédemment, comme les
+                        fonctions, les
+                        conditions, les boucles, ou encore les différents types de variables.
+                        Egalement, comme ce projet était à réaliser par groupes de deux, nous avons put travailler en
+                        équipe et
+                        améliorer nos méthodes de communications. J'ai donc réalisé le projet en coopération avec Louis
+                        Hugueny.
+                    </p>
+                </div>
+            </div>
+            <div class="row" id="projet">
+                <h4>Le projet</h4>
+            </div>
+            <div class="row">
+                <p>Lorsque l'on éxcute le programme, nous avons 3 options :</p>
+            </div>
+            <div class="row">
+                <ol>
+                    <li>Cryptage avec clé</li>
+                    <li>Décryptage avec clé</li>
+                    <li>Décryptage sans clé</li>
+                    <li>Fin du programme</li>
+                </ol>
+            </div>
+            <div class="row">
+                <div data-scroll class="col-lg-12 col-md-12 col-xs-24">
+                    <p>La partie du programme que j’ai le plus appréciée est la fonction décryptage sans clé, car c’est
+                        celle
+                        qui nous a demandé le plus de réflexion. En effet, cette fonction devait permettre à
+                        l’utilisateur de
+                        décrypter une chaîne de caractère sans la clé de décryptage. Pour cela, la fonction décryptage
+                        sans clé
+                        utilise la fonction décryptage avec clé afin de tester successivement les 25 clés possibles, et
+                        demande
+                        à l’utilisateur à chaque clé testé s’il visualise le texte en clair, et ce jusqu’à ce que le
+                        texte soit
+                        décrypté ou que les 25 clé aient étés testés. Dans ce cas le programme renverra un message
+                        d’erreur.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <pre class="container"><code class="language-python">def decryptageSansCle(text:str)->str:                       #définit fonction decryptageSansCle avec text comme paramètre
+                """
+                Décrypte une chaine sans clé    
+                \n Pré : texte à décrypter -> text:str
+                \n Post : texte décrypté -> textDecrypte:str ou message erreur décryptage -> str 
+                """
+            
+                assert type(text)==str, "Le texte doit être une chaine de caractères"    #affiche si text n'est pas une chaine de caractères
+                i=0                                                     #définit variable i = 0
+                while i <= 26:                                          #répète les instructions ci-dessous tant que i est inférieur ou égal à 26
+                    print("\n Tentative de décryptage avec clé de {} : {}".format(i, decryptage(i, text)))     #affiche le message précèdant avec la variable i et le résultat de la fonction decryptage avec les paramètres i et text
+                    textClair=input("Si vous visualisez le texte en clair tapez F (majuscule ou minuscule), sinon tapez entrée : ")         #assigne à la variable textClair le choix de l'utilisateur
+                    if textClair=='f' or textClair=='F':                #si textClair = lettre f ou si textClair = lettre F
+                        return decryptage(i, text)                      #retourne le résultat de la fonction decryptage avec les paramètres i et text
+                    else:                                               #sinon
+                        i+=1                                            #ajoute 1 à i
+                return "Désolé, vous avez essayé toutes les valeurs de clé, le texte a été crypté selon une méthode non mono-alphabétique"     #retourne le texte précédant
+            
+            </code></pre>
+            </div>
+
+            <div class="row" id="difficultes">
+
+                <h4>La réalisation</h4>
+
+                <div class="row">
+
+                    <div data-scroll class="col-lg-6 col-md-6 col-xs-12">
+                        <h5>Les difficultés :</h5>
+                        <p>Nous n’avons pas particulièrement rencontrés de difficultés, néanmoins ce projet nous aura
+                            demandé
+                            quelques réflexions quant à l’utilisation de clés négatives, ou de la fonction décryptage
+                            sans clé par
+                            exemple.
+                        </p>
+                    </div>
+                    <div data-scroll class="col-lg-6 col-md-6 col-xs-12" id="perspectives">
+                        <h5>Les perspectives :</h5>
+                        <p>Comme perspectives nous aurions pu apporter au programme une gestion des lettres minuscules
+                            ou encore
+                            ajouter une interface graphique afin de simplifier l’utilisation de logiciel.
+                        </p>
+                    </div>
+                </div>
+                <div class="row" id="travail">
+                    <div data-scroll class="col-lg-6 col-md-6 col-xs-12">
+                        <h5>Répartition du travail</h5>
+                        <p>Pour la répartition du travail, avec Louis nous avons tout d’abord commencé ensemble le
+                            programme au
+                            lycée. Ensuite, nous avons chacun apportés nos idées au projet, pour réaliser un programme
+                            final
+                            respectant au mieux les perspectives données.
+                        </p>
+                    </div>
+                    <div data-scroll class="col-lg-6 col-md-6 col-xs-12" id="comminucation">
+                        <h5>Communication :</h5>
+                        <p>Pour la communication, nos avons dialogué principalement via SMS, afin de rester en contact
+                            tout au long
+                            du projet et d’échanger nos idées.
+                            Egalement, pour échanger nos fichiers, nous avons utilisé la plate-forme en ligne GitHub, ce
+                            qui nous a
+                            permis de travailler plus simplement sur le même programme.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <a href="https://github.com/">
+                        <img src="img/gtiHub2.png" width="800px" alt="GitHub logo">
+                    </a>
+                </div>
+                <div class="row right">
+                    <p>Site réalisé par Charles Stchepinsky</p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
+            integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ=="
+            crossorigin="anonymous"></script>
+        <script>
+            ScrollOut({
+                treshold: .6
+            })
+
+            var rellax = new Rellax('.rellax');</script>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/prism.min.js"
+            integrity="sha512-9+422Bs3A87UkWfp+qV80Nfv9arhbCXKY1rxrF2seorI36mIIstMiuBfyKLF1yH1nnzQkEWq2xrzT4XU3Z+vrA=="
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/components/prism-python.min.js"
+            integrity="sha512-EXseTM1JV8e3AonU5PfOUmzbPkUTRm4c4hVxv206gVeWZE/FwzSQBNWrUBaHsN3Idq9k76BEjUlXpluX1UFx6Q=="
+            crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
